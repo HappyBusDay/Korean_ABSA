@@ -55,7 +55,7 @@
 
 # 라. 주요 소스 코드
 
-- ## 모델 로드: Hugging Face에서 Pre-Trained Model 불러오기 ( pip install transformers )
+- ## Model Load: Hugging Face에서 Pre-Trained Model 불러오기 ( pip install transformers )
 
     ### Category, Polarity 사용 모델
     - ELECTRA : [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
@@ -74,7 +74,7 @@ tokenizer = AutoTokenizer.from_pretrained(base_model)
 ```
 
 
-- ## 데이터 로드: jsonlload
+- ## Data Load: jsonlload
 데이터가 line별로 저장된 json 파일( jsonl )이기 때문에 데이터 로드를 할 때 해당 코드로 구현함
 
 ```c
@@ -91,7 +91,8 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
 - ## Pipeline: predict_from_korean_form
    코드 내에서 5종류의 Pipeline이 있지만 그 중 2종류
 
-    - 방법 1: Force ( Force evaluation of a Argment )
+    - #### 방법 1: Force ( Force evaluation of a Argment )
+    
     ( 빈칸 " [ ] " 에 대해서 가장 높은 확률의 카테고리를 강제로 뽑아내는 방법 )
     
         ```c
@@ -106,7 +107,9 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
         ```
             
  
-    - 방법 2: DeBERTa(RoBERTa)와 ELECTRA Pipeline
+    - #### 방법 2: DeBERTa(RoBERTa)와 ELECTRA Pipeline
+    
+    ( 기존의 한 모델에 대한 tokenizer만으로 pipeline을 구축하는 것이 아닌 여러 모델을 로드한 후 각 모델 별 tokenizer를 이용해 pipeline을 구축하는 방법 )
     
         ```c
         
@@ -120,7 +123,9 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
         ```
 
 
-- ## 코드 4: Inference 여러 모델 ( " [ ] " 을 최소화 하기 위해 DeBERTa와 ELECTRA 등 여러 모델의 Weight파일을 불러 진행)
+- ## Inference: 여러 모델을 거쳐 Inference를 진행 ( 해당 코드는 12종류[category{6종류} + polarity{6종류}]의 모델을 불러옴 )
+
+( " [ ] " 을 최소화 하기 위해 DeBERTa와 ELECTRA 등 여러 모델의 Weight파일을 불러 진행)
 
 ```c
 def Win():
