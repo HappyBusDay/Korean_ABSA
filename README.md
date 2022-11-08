@@ -5,6 +5,8 @@
 
 #### 국립국어원 데이터셋(모두의 말뭉치) 신청하기 : [2022 인공지능 언어 능력 평가 말뭉치: ABSA](https://corpus.korean.go.kr/main.do#)
 
+#### F1 score 평가 방식 변경으로 대회 기간이 2022년 11월 09일로 연장.
+
 ### 최종 순위
 
 <img width="900" alt="순위 예시" src="https://user-images.githubusercontent.com/73925429/200461303-85d6bcf5-3d91-4145-a4f1-fd81173c81cd.png">
