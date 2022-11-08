@@ -34,10 +34,12 @@
 # 다. 데이터 증강 방식
 
 #### 1. Augmentation - RI(Random Insertion): 감탄사와 의성어를 문장 내에 추가하는 방식
-      ```  
+
+    ```  
        ex) 나는 자전거 타는 것을 좋아한다. -> 와! 나는 자전거 타는 것을 좋아한다.
     ```
 #### 2. Back-Translation
+
     ```
        원본) 나는 자전거 타는 것을 좋아한다. 
 
@@ -152,6 +154,7 @@
 
         return pd.DataFrame(jsonlload('/content/drive/MyDrive/Inference_samples.jsonl'))
     ```
+    
     
 - ## Ensemble: 위의 Inference의 결과로 만들어진 jsonl파일을 불러와 Hard Voting을 진행
     [Ensemble.ipynb 참조](https://github.com/tysl4545/Korean_ABSA/blob/main/code/Ensemble.ipynb)
