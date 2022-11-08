@@ -89,7 +89,7 @@ def jsonlload(fname, encoding="utf-8"):
 df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
 ```
 - ## Pipeline: predict_from_korean_form
-코드 내에서 5종류의 Pipeline이 있지만 그 중 2종류
+   코드 내에서 5종류의 Pipeline이 있지만 그 중 2종류
 
     - 방법 1: Force ( Force evaluation of a Argment )
     ( 빈칸 " [ ] " 에 대해서 가장 높은 확률의 카테고리를 강제로 뽑아내는 방법 )
@@ -120,7 +120,7 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
         ```
 
 
-- 코드 4: Inference 여러 모델 ( " [ ] " 을 최소화 하기 위해 DeBERTa와 ELECTRA 등 여러 모델의 Weight파일을 불러 진행)
+- ## 코드 4: Inference 여러 모델 ( " [ ] " 을 최소화 하기 위해 DeBERTa와 ELECTRA 등 여러 모델의 Weight파일을 불러 진행)
 
 ```c
 def Win():
