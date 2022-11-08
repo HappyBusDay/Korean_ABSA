@@ -32,12 +32,12 @@
 ---
 
 # 다. 데이터 증강 방식
-
-1. Augmentation - RI(Random Insertion): 감탄사와 의성어를 문장 내에 추가하는 방식
+```
+#### 1. Augmentation - RI(Random Insertion): 감탄사와 의성어를 문장 내에 추가하는 방식
     
    ex) 나는 자전거 타는 것을 좋아한다. -> 와! 나는 자전거 타는 것을 좋아한다.
 
-2. Back-Translation
+#### 2. Back-Translation
 
    원본) 나는 자전거 타는 것을 좋아한다. 
     
@@ -47,10 +47,10 @@
     
    위의 예와 같이 특정 문장을 다른 언어로 번역한 후 다시 한국어로 번역하여 의미는 같지만 형태가 다른 문장을 생성하는 방식
     
-3. 외부 API 활용
+#### 3. 외부 API 활용
  
-    크롤링한 데이터(출처: 네이버쇼핑, 올리브영)에 대해 NAVER CLOVA Sentiment API를 이용하여 Label을 'neutral'과 'negative'를 부여하는 방식
-    
+   크롤링한 데이터(출처: 네이버쇼핑, 올리브영)에 대해 NAVER CLOVA Sentiment API를 이용하여 Label을 'neutral'과 'negative'를 부여하는 방식
+```    
 ---
 
 # 라. 주요 소스 코드
@@ -112,14 +112,14 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
     ( 기존의 한 모델에 대한 tokenizer만으로 pipeline을 구축하는 것이 아닌 여러 모델을 로드한 후 각 모델 별 tokenizer를 이용해 pipeline을 구축하는 방법 )
     
         ```c
-        
-            def predict_from_korean_form_deberta(tokenizer_deberta, tokenizer_kelec, ce_model, pc_model, data):
-            
-                ...
 
-               자세한 코드는 code/test.ipynb 참조
-               
-                return data
+        def predict_from_korean_form_deberta(tokenizer_deberta, tokenizer_kelec, ce_model, pc_model, data):
+
+            ...
+
+           자세한 코드는 code/test.ipynb 참조
+
+            return data
         ```
 
 
