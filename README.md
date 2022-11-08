@@ -41,27 +41,30 @@
 
    원본) 나는 자전거 타는 것을 좋아한다. 
     
-   번역 후) J'aime faire du vélo. ( 프랑스어 )
+   한국어 -> 프랑스어) J'aime faire du vélo. 
     
-   역번역 후) 저는 자전거 타는 것을 좋아해요.
+   프랑스어 -> 한국어) 저는 자전거 타는 것을 좋아해요.
     
 >    위의 예와 같이 특정 문장을 다른 언어로 번역한 후 다시 한국어로 번역하여 의미는 같지만 형태가 다른 문장을 생성하는 방식
     
 3. 외부 API 활용
  
-    NAVER API를 활용하여 크롤링한 데이터와 수정한 데이터에 대한 'neutral'과 'negative'에 대한 label 부여하는 방식    
-
+    크롤링한 데이터(출처: 네이버쇼핑, 올리브영)에 대해 NAVER CLOVA Sentiment API를 이용하여 Label을 'neutral'과 'negative'를 부여하는 방식
+    
 ---
 
 # 라. 주요 소스 코드
 
-- 코드 1: Hugging Face에서 Pre-Trained Model 불러오기 ( pip install transformers )
+- 모델 로드: Hugging Face에서 Pre-Trained Model 불러오기 ( pip install transformers )
+
+    ### Category, Polarity 사용 모델
     - ELECTRA : [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
-
+    > 한국어 기반 리뷰 데이터로 학습된 ELECTRA Model
+    ### Polarity 사용 모델
     - RoBERTa : [xlm-roberta-base](https://huggingface.co/xlm-roberta-base)
-
+    > Multi-language로 학습된 RoBERTa Model ( 처음 reference 진행한 model )
     - DeBERTa : [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
-
+    > 모두의 말뭉치, 국민청원 등의 데이터로 학습된 DeBERTa Model
 ```c
 from transformers import AutoTokenizer, AutoModel
 base_model = "HuggingFace주소"
@@ -71,7 +74,9 @@ tokenizer = AutoTokenizer.from_pretrained(base_model)
 ```
 
 
-- 코드 2: jsonlload
+- 데이터 로드: jsonlload
+데이터가 line별로 저장된 json 파일( jsonl )이기 때문에 데이터 로드를 할 때 해당 코드로 구현함
+
 ```c
 import json
 import pandas as pd
@@ -83,9 +88,11 @@ def jsonlload(fname, encoding="utf-8"):
     return json_list
 df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
 ```
-- 코드 3: predoct_from_korean_form
+- Pipeline: predict_from_korean_form
+코드 내에서 5종류의 Pipeline이 있지만 그 중 2종류
 
-    - 코드 3-1: Forcing ( 빈칸 " [ ] " 에 대해서 가장 높은 확률의 카테고리를 강제로 뽑아내는 방법, 용어는 임의로 설정하였음 )
+    - 방법 1: Force ( Force evaluation of a Argment )
+    ( 빈칸 " [ ] " 에 대해서 가장 높은 확률의 카테고리를 강제로 뽑아내는 방법 )
     
         ```c
 
@@ -99,7 +106,7 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
         ```
             
  
-    - 코드 3-2: DeBERTa(RoBERTa)와 ELECTRA Pipeline
+    - 방법 2: DeBERTa(RoBERTa)와 ELECTRA Pipeline
     
         ```c
         
