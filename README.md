@@ -93,6 +93,8 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
 
 - ## Pipeline: predict_from_korean_form
    코드 내에서 5종류의 Pipeline이 있지만 그 중 2종류
+   
+   [Korean_ABSA/code/test.ipynb 참조](https://github.com/tysl4545/Korean_ABSA/blob/main/code/test.ipynb)
 
     - #### 방법 1: Force ( Force evaluation of a Argment )
     
