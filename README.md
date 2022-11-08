@@ -34,17 +34,17 @@
 # 다. 데이터 증강 방식
 
 #### 1. Augmentation - RI(Random Insertion): 감탄사와 의성어를 문장 내에 추가하는 방식
-  ```  
-   ex) 나는 자전거 타는 것을 좋아한다. -> 와! 나는 자전거 타는 것을 좋아한다.
-```
+      ```  
+       ex) 나는 자전거 타는 것을 좋아한다. -> 와! 나는 자전거 타는 것을 좋아한다.
+    ```
 #### 2. Back-Translation
-```
-   원본) 나는 자전거 타는 것을 좋아한다. 
-    
-   한국어 -> 프랑스어) J'aime faire du vélo. 
-    
-   프랑스어 -> 한국어) 저는 자전거 타는 것을 좋아해요.
- ```   
+    ```
+       원본) 나는 자전거 타는 것을 좋아한다. 
+
+       한국어 -> 프랑스어) J'aime faire du vélo. 
+
+       프랑스어 -> 한국어) 저는 자전거 타는 것을 좋아해요.
+     ```   
    위의 예와 같이 특정 문장을 다른 언어로 번역한 후 다시 한국어로 번역하여 의미는 같지만 형태가 다른 문장을 생성하는 방식
     
 #### 3. 외부 API 활용
@@ -65,13 +65,13 @@
     > Multi-language로 학습된 RoBERTa Model ( 처음 reference 진행한 model )
     - DeBERTa : [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
     > (한국어) 모두의 말뭉치, 국민청원 등의 데이터로 학습된 DeBERTa Model
-```c
-from transformers import AutoTokenizer, AutoModel
-base_model = "HuggingFace주소"
+    ```c
+    from transformers import AutoTokenizer, AutoModel
+    base_model = "HuggingFace주소"
 
-Model = AutoModel.from_pretrained(base_model)
-tokenizer = AutoTokenizer.from_pretrained(base_model)
-```
+    Model = AutoModel.from_pretrained(base_model)
+    tokenizer = AutoTokenizer.from_pretrained(base_model)
+    ```
 
 
 
