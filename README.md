@@ -180,5 +180,7 @@
     [Auto_Ensemble.ipynb 참조](https://github.com/tysl4545/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb)
 
     <img width="504" alt="hard voting" src="https://user-images.githubusercontent.com/73925429/200563368-a9845d1c-7065-4913-817f-1be4dbbd30d7.png">
+    
     ( Hard Voting )
+    
     [그림 출처: Ensemble Learning : Voting and Bagging](https://velog.io/@jiselectric/Ensemble-Learning-Voting-and-Bagging-at6219ae)
