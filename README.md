@@ -39,11 +39,11 @@ base_model = "HuggingFace주소"
 Model = AutoModel.from_pretrained(base_model)
 tokenizer = AutoTokenizer.from_pretrained(base_model)
 ```
-ELECTRA : [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
+    ELECTRA : [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
 
-RoBERTa : [xlm-roberta-base](https://huggingface.co/xlm-roberta-base)
+    RoBERTa : [xlm-roberta-base](https://huggingface.co/xlm-roberta-base)
 
-DeBERTa : [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
+    DeBERTa : [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
 
 
 - 코드 2: jsonlload
