@@ -23,7 +23,7 @@
 ---
 
 # 나. 데이터 예시 
-( 출처 : 국립국어원, 2022 인공지능 언어 능력 평가 말뭉치: ABSA )
+ 출처 : 국립국어원, 2022 인공지능 언어 능력 평가 말뭉치: ABSA 
 
     {"id": "nikluge-sa-2022-train-00001", "sentence_form": "둘쨋날은 미친듯이 밟아봤더니 기어가 헛돌면서 틱틱 소리가 나서 경악.", "annotation": [["본품#품질", ["기어", 16, 18], "negative"]]}
     {"id": "nikluge-sa-2022-train-00002", "sentence_form": "이거 뭐 삐꾸를 준 거 아냐 불안하고, 거금 투자한 게 왜 이래.. 싶어서 정이 확 떨어졌는데 산 곳 가져가서 확인하니 기어 텐션 문제라고 고장 아니래.", "annotation": [["본품#품질", ["기어 텐션", 67, 72], "negative"]]}
@@ -93,7 +93,7 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
 
     - #### 방법 1: Force ( Force evaluation of a Argment )
     
-    ( 빈칸 " [ ] " 에 대해서 가장 높은 확률의 카테고리를 강제로 뽑아내는 방법 )
+     빈칸 " [ ] " 에 대해서 가장 높은 확률의 카테고리를 강제로 뽑아내는 방법 
     
      ```c
 
@@ -109,7 +109,7 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
  
     - #### 방법 2: DeBERTa(RoBERTa)와 ELECTRA Pipeline
     
-    ( 기존의 한 모델에 대한 tokenizer만으로 pipeline을 구축하는 것이 아닌 여러 모델을 로드한 후 각 모델 별 tokenizer를 이용해 pipeline을 구축하는 방법 )
+     기존의 한 모델에 대한 tokenizer만으로 pipeline을 구축하는 것이 아닌 여러 모델을 로드한 후 각 모델 별 tokenizer를 이용해 pipeline을 구축하는 방법 
     
      ```c
 
@@ -124,9 +124,9 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
 
 
 - ## Inference: 여러 모델을 거쳐 Inference를 진행
- ( 해당 코드는 12종류[category{6종류} + polarity{6종류}]의 모델을 불러옴 )
+  해당 코드는 12종류[category{6종류} + polarity{6종류}]의 모델을 불러옴 
 
-( " [ ] " 을 최소화 하기 위해 DeBERTa와 ELECTRA 등 여러 모델의 Weight파일을 불러 진행)
+ " [ ] " 을 최소화 하기 위해 DeBERTa와 ELECTRA 등 여러 모델의 Weight파일을 불러 진행
 
 ```c
 def Win():
