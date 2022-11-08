@@ -95,7 +95,7 @@
 
 
 - ## Pipeline: predict_from_korean_form
-   코드 내에서 5종류의 Pipeline이 있지만 그 중 2종류
+   코드 내에서 6종류의 Pipeline이 있지만 그 중 3종류
    
    [tysl4545/Korean_ABSA/code/test.ipynb 참조](https://github.com/tysl4545/Korean_ABSA/blob/main/code/test.ipynb)
 
@@ -129,6 +129,23 @@
 
         return data
      ```
+     
+     
+    - #### 방법 3: Threshold
+     
+     확률 기반으로 annotation을 확실한 것만 가져오는 방법 ( 확실한 것만 잡고 확률값이 낮은 것은 그냥 " [ ] "으로 결과값 도출 )
+    
+     ```c
+
+    def predict_from_korean_form_kelec_threshold(tokenizer_kelec, ce_model, pc_model, data):
+
+        ...
+
+       자세한 코드는 code/test.ipynb 참조
+
+        return data
+     ```
+   
 
 
 - ## Inference: 여러 모델을 거쳐 Inference를 진행
