@@ -12,6 +12,7 @@
 <img width="900" alt="순위 예시" src="https://user-images.githubusercontent.com/73925429/200461303-85d6bcf5-3d91-4145-a4f1-fd81173c81cd.png">
 
 ---
+---
 
 # 가. 개발 환경
 
@@ -21,6 +22,7 @@
        구체적인 개발환경은 requirements.txt 참고
 
 ---
+---
 
 # 나. 데이터 예시 
  출처 : 국립국어원, 2022 인공지능 언어 능력 평가 말뭉치: ABSA 
@@ -29,6 +31,7 @@
     {"id": "nikluge-sa-2022-train-00002", "sentence_form": "이거 뭐 삐꾸를 준 거 아냐 불안하고, 거금 투자한 게 왜 이래.. 싶어서 정이 확 떨어졌는데 산 곳 가져가서 확인하니 기어 텐션 문제라고 고장 아니래.", "annotation": [["본품#품질", ["기어 텐션", 67, 72], "negative"]]}
     {"id": "nikluge-sa-2022-train-00003", "sentence_form": "간사하게도 그 이후에는 라이딩이 아주 즐거워져서 만족스럽게 탔다.", "annotation": [["제품 전체#일반", [null, 0, 0], "positive"]]}
 
+---
 ---
 
 # 다. 데이터 증강 방식
@@ -52,6 +55,7 @@
    크롤링한 데이터(출처: 네이버쇼핑, 올리브영)에 대해 NAVER CLOVA Sentiment API를 이용하여 Label을 'neutral'과 'negative'를 부여하는 방식
     
 ---
+---
 
 # 라. 주요 소스 코드
 
@@ -73,6 +77,7 @@ Model = AutoModel.from_pretrained(base_model)
 tokenizer = AutoTokenizer.from_pretrained(base_model)
 ```
 
+---
 
 - ## Data Load: jsonlload
 데이터가 line별로 저장된 json 파일( jsonl )이기 때문에 데이터 로드를 할 때 해당 코드로 구현함
@@ -88,6 +93,8 @@ def jsonlload(fname, encoding="utf-8"):
     return json_list
 df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
 ```
+---
+
 - ## Pipeline: predict_from_korean_form
    코드 내에서 5종류의 Pipeline이 있지만 그 중 2종류
 
@@ -121,7 +128,7 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
 
         return data
      ```
-
+---
 
 - ## Inference: 여러 모델을 거쳐 Inference를 진행
   해당 코드는 12종류[category{6종류} + polarity{6종류}]의 모델을 불러옴 
