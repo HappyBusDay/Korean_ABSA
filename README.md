@@ -49,6 +49,8 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
         ```c
 
         def predict_from_korean_form_kelec_forcing(tokenizer_kelec, ce_model, pc_model, data):
+        
+            ...
 
             자세한 코드는 all_code.ipynb 참조
 
@@ -61,6 +63,8 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
         ```c
         
             def predict_from_korean_form_deberta(tokenizer_deberta, tokenizer_kelec, ce_model, pc_model, data):
+            
+                ...
 
                자세한 코드는 all_code.ipynb 참조
                
@@ -83,6 +87,7 @@ def Win():
     num_added_toks_deberta = tokenizer_deberta.add_special_tokens(special_tokens_dict)
     num_added_toks_roberta = tokenizer_roberta.add_special_tokens(special_tokens_dict)
     
+    ...    
     
     자세한 코드는 all_code.ipynb 참조
 
