@@ -76,19 +76,19 @@ tokenizer = AutoTokenizer.from_pretrained(base_model)
 
 
 - ## Data Load: jsonlload
-데이터가 line별로 저장된 json 파일( jsonl )이기 때문에 데이터 로드를 할 때 해당 코드로 구현함
+    데이터가 line별로 저장된 json 파일( jsonl )이기 때문에 데이터 로드를 할 때 해당 코드로 구현함
 
-```c
-import json
-import pandas as pd
-def jsonlload(fname, encoding="utf-8"):
-    json_list = []
-    with open(fname, encoding=encoding) as f:
-        for line in f.readlines():
-            json_list.append(json.loads(line))
-    return json_list
-df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
-```
+    ```c
+    import json
+    import pandas as pd
+    def jsonlload(fname, encoding="utf-8"):
+        json_list = []
+        with open(fname, encoding=encoding) as f:
+            for line in f.readlines():
+                json_list.append(json.loads(line))
+        return json_list
+    df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
+    ```
 
 
 - ## Pipeline: predict_from_korean_form
@@ -129,35 +129,35 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
 
 
 - ## Inference: 여러 모델을 거쳐 Inference를 진행
-해당 코드는 12종류[category{6종류} + polarity{6종류}]의 모델을 불러옴 
+    해당 코드는 12종류[category{6종류} + polarity{6종류}]의 모델을 불러옴 
 
-" [ ] " 을 최소화 하기 위해 DeBERTa와 ELECTRA 등 여러 모델의 Weight파일을 불러 진행
+    " [ ] " 을 최소화 하기 위해 DeBERTa와 ELECTRA 등 여러 모델의 Weight파일을 불러 진행
 
-```c
-def Win():
+    ```c
+    def Win():
 
-    print("Deberta!!")
+        print("Deberta!!")
 
-    tokenizer_kelec = AutoTokenizer.from_pretrained(base_model_elec)
-    tokenizer_deberta = AutoTokenizer.from_pretrained(base_model_deberta)
-    tokenizer_roberta = AutoTokenizer.from_pretrained(base_model_roberta)
+        tokenizer_kelec = AutoTokenizer.from_pretrained(base_model_elec)
+        tokenizer_deberta = AutoTokenizer.from_pretrained(base_model_deberta)
+        tokenizer_roberta = AutoTokenizer.from_pretrained(base_model_roberta)
 
-    num_added_toks_kelec = tokenizer_kelec.add_special_tokens(special_tokens_dict)
-    num_added_toks_deberta = tokenizer_deberta.add_special_tokens(special_tokens_dict)
-    num_added_toks_roberta = tokenizer_roberta.add_special_tokens(special_tokens_dict)
-    
-    ...    
-    
-    자세한 코드는 code/test.ipynb 참조
+        num_added_toks_kelec = tokenizer_kelec.add_special_tokens(special_tokens_dict)
+        num_added_toks_deberta = tokenizer_deberta.add_special_tokens(special_tokens_dict)
+        num_added_toks_roberta = tokenizer_roberta.add_special_tokens(special_tokens_dict)
 
-    return pd.DataFrame(jsonlload('/content/drive/MyDrive/Inference_samples.jsonl'))
-```
+        ...    
+
+        자세한 코드는 code/test.ipynb 참조
+
+        return pd.DataFrame(jsonlload('/content/drive/MyDrive/Inference_samples.jsonl'))
+    ```
     
 - ## Ensemble: 위의 Inference의 결과로 만들어진 jsonl파일을 불러와 Hard Voting을 진행
-[Ensemble.ipynb 참조](https://github.com/tysl4545/Korean_ABSA/blob/main/code/Ensemble.ipynb)
+    [Ensemble.ipynb 참조](https://github.com/tysl4545/Korean_ABSA/blob/main/code/Ensemble.ipynb)
 
-[Auto_Ensemble.ipynb 참조](https://github.com/tysl4545/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb)
+    [Auto_Ensemble.ipynb 참조](https://github.com/tysl4545/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb)
 
-<img width="504" alt="hard voting" src="https://user-images.githubusercontent.com/73925429/200563368-a9845d1c-7065-4913-817f-1be4dbbd30d7.png">
-( Hard Voting )
-[그림 출처: Ensemble Learning : Voting and Bagging](https://velog.io/@jiselectric/Ensemble-Learning-Voting-and-Bagging-at6219ae)
+    <img width="504" alt="hard voting" src="https://user-images.githubusercontent.com/73925429/200563368-a9845d1c-7065-4913-817f-1be4dbbd30d7.png">
+    ( Hard Voting )
+    [그림 출처: Ensemble Learning : Voting and Bagging](https://velog.io/@jiselectric/Ensemble-Learning-Voting-and-Bagging-at6219ae)
