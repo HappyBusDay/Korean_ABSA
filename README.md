@@ -15,7 +15,7 @@
 
     1. Google Colab Pro
     
-    2. AWS(Amazom Web Services) 
+    2. AWS(Amazom Web Services) , Python
     AWS의 구체적인 개발환경은 requirements.txt 참고
 
 ---
