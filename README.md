@@ -5,13 +5,15 @@
 
 #### 국립국어원 데이터셋(모두의 말뭉치) 신청하기 : [2022 인공지능 언어 능력 평가 말뭉치: ABSA](https://corpus.korean.go.kr/main.do#)
 
+F1 score 평가 방식 변경으로 대회 기간이 2022년 11월 09일로 연장.
+
 ### 최종 순위
 
 <img width="900" alt="순위 예시" src="https://user-images.githubusercontent.com/73925429/200461303-85d6bcf5-3d91-4145-a4f1-fd81173c81cd.png">
 
 ---
 
-# 개발 환경
+# 가. 개발 환경
 
     1. Google Colab Pro
     
@@ -20,7 +22,7 @@
 
 ---
 
-# 데이터 예시 
+# 나. 데이터 예시 
 ( 출처 : 국립국어원, 2022 인공지능 언어 능력 평가 말뭉치: ABSA )
 
     {"id": "nikluge-sa-2022-train-00001", "sentence_form": "둘쨋날은 미친듯이 밟아봤더니 기어가 헛돌면서 틱틱 소리가 나서 경악.", "annotation": [["본품#품질", ["기어", 16, 18], "negative"]]}
@@ -29,7 +31,29 @@
 
 ---
 
-# 주요 소스 코드
+# 다. 데이터 증강 방식
+
+1. Augmentation - RI(Random Insertion): 감탄사와 의성어를 문장 내에 추가하는 방식
+    
+   ex) 나는 자전거 타는 것을 좋아한다. -> 와! 나는 자전거 타는 것을 좋아한다.
+
+2. Back-Translation
+
+   ex1) 나는 자전거 타는 것을 좋아한다. 
+    
+   ex2) J'aime faire du vélo. ( 프랑스어 )
+    
+   ex3) 저는 자전거 타는 것을 좋아해요.
+    
+>    위의 예와 같이 특정 문장을 다른 언어로 번역한 후 다시 한국어로 번역하여 의미는 같지만 형태가 다른 문장을 생성하는 방식
+    
+3. 외부 API 활용
+ 
+    NAVER API를 활용하여 크롤링한 데이터와 수정한 데이터에 대한 'neutral'과 'negative'에 대한 label 부여하는 방식    
+
+---
+
+# 라. 주요 소스 코드
 
 - 코드 1: Hugging Face에서 Pre-Trained Model 불러오기 ( pip install transformers )
     - ELECTRA : [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
