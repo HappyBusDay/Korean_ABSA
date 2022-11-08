@@ -127,9 +127,9 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
 
 
 - ## Inference: 여러 모델을 거쳐 Inference를 진행
-  해당 코드는 12종류[category{6종류} + polarity{6종류}]의 모델을 불러옴 
+해당 코드는 12종류[category{6종류} + polarity{6종류}]의 모델을 불러옴 
 
- " [ ] " 을 최소화 하기 위해 DeBERTa와 ELECTRA 등 여러 모델의 Weight파일을 불러 진행
+" [ ] " 을 최소화 하기 위해 DeBERTa와 ELECTRA 등 여러 모델의 Weight파일을 불러 진행
 
 ```c
 def Win():
