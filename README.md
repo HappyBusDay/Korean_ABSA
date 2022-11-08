@@ -95,32 +95,32 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
     
     ( 빈칸 " [ ] " 에 대해서 가장 높은 확률의 카테고리를 강제로 뽑아내는 방법 )
     
-        ```c
+     ```c
 
-        def predict_from_korean_form_kelec_forcing(tokenizer_kelec, ce_model, pc_model, data):
-        
-            ...
+    def predict_from_korean_form_kelec_forcing(tokenizer_kelec, ce_model, pc_model, data):
 
-            자세한 코드는 code/test.ipynb 참조
+        ...
 
-            return data
-        ```
+        자세한 코드는 code/test.ipynb 참조
+
+        return data
+     ```
             
  
     - #### 방법 2: DeBERTa(RoBERTa)와 ELECTRA Pipeline
     
     ( 기존의 한 모델에 대한 tokenizer만으로 pipeline을 구축하는 것이 아닌 여러 모델을 로드한 후 각 모델 별 tokenizer를 이용해 pipeline을 구축하는 방법 )
     
-        ```c
+     ```c
 
-        def predict_from_korean_form_deberta(tokenizer_deberta, tokenizer_kelec, ce_model, pc_model, data):
+    def predict_from_korean_form_deberta(tokenizer_deberta, tokenizer_kelec, ce_model, pc_model, data):
 
-            ...
+        ...
 
-           자세한 코드는 code/test.ipynb 참조
+       자세한 코드는 code/test.ipynb 참조
 
-            return data
-        ```
+        return data
+     ```
 
 
 - ## Inference: 여러 모델을 거쳐 Inference를 진행 ( 해당 코드는 12종류[category{6종류} + polarity{6종류}]의 모델을 불러옴 )
