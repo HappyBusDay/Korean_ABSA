@@ -32,6 +32,12 @@
 # 주요 소스 코드
 
 - 코드 1: Hugging Face에서 Pre-Trained Model 불러오기 ( pip install transformers )
+    - ELECTRA : [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
+
+    - RoBERTa : [xlm-roberta-base](https://huggingface.co/xlm-roberta-base)
+
+    - DeBERTa : [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
+
 ```c
 from transformers import AutoTokenizer, AutoModel
 base_model = "HuggingFace주소"
@@ -39,11 +45,6 @@ base_model = "HuggingFace주소"
 Model = AutoModel.from_pretrained(base_model)
 tokenizer = AutoTokenizer.from_pretrained(base_model)
 ```
-ELECTRA : [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
-
-RoBERTa : [xlm-roberta-base](https://huggingface.co/xlm-roberta-base)
-
-DeBERTa : [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
 
 
 - 코드 2: jsonlload
