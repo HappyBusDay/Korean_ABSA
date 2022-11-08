@@ -15,8 +15,17 @@
 
     1. Google Colab Pro
     
-    2. AWS(Amazom Web Services) 
+    2. AWS(Amazom Web Services) , Python
     AWS의 구체적인 개발환경은 requirements.txt 참고
+
+---
+
+# 데이터 예시 
+( 출처 : 국립국어원, 2022 인공지능 언어 능력 평가 말뭉치: ABSA )
+
+    {"id": "nikluge-sa-2022-train-00001", "sentence_form": "둘쨋날은 미친듯이 밟아봤더니 기어가 헛돌면서 틱틱 소리가 나서 경악.", "annotation": [["본품#품질", ["기어", 16, 18], "negative"]]}
+    {"id": "nikluge-sa-2022-train-00002", "sentence_form": "이거 뭐 삐꾸를 준 거 아냐 불안하고, 거금 투자한 게 왜 이래.. 싶어서 정이 확 떨어졌는데 산 곳 가져가서 확인하니 기어 텐션 문제라고 고장 아니래.", "annotation": [["본품#품질", ["기어 텐션", 67, 72], "negative"]]}
+    {"id": "nikluge-sa-2022-train-00003", "sentence_form": "간사하게도 그 이후에는 라이딩이 아주 즐거워져서 만족스럽게 탔다.", "annotation": [["제품 전체#일반", [null, 0, 0], "positive"]]}
 
 ---
 
@@ -30,6 +39,13 @@ base_model = "HuggingFace주소"
 Model = AutoModel.from_pretrained(base_model)
 tokenizer = AutoTokenizer.from_pretrained(base_model)
 ```
+ELECTRA : [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
+
+RoBERTa : [xlm-roberta-base](https://huggingface.co/xlm-roberta-base)
+
+DeBERTa : [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
+
+
 - 코드 2: jsonlload
 ```c
 import json
@@ -52,7 +68,7 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
         
             ...
 
-            자세한 코드는 all_code.ipynb 참조
+            자세한 코드는 code/test.ipynb 참조
 
             return data
         ```
@@ -66,7 +82,7 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
             
                 ...
 
-               자세한 코드는 all_code.ipynb 참조
+               자세한 코드는 code/test.ipynb 참조
                
                 return data
         ```
@@ -89,7 +105,7 @@ def Win():
     
     ...    
     
-    자세한 코드는 all_code.ipynb 참조
+    자세한 코드는 code/test.ipynb 참조
 
     return pd.DataFrame(jsonlload('/content/drive/MyDrive/Inference_samples.jsonl'))
 ```
