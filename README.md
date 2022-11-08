@@ -52,7 +52,7 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
         
             ...
 
-            자세한 코드는 all_code.ipynb 참조
+            자세한 코드는 test.ipynb 참조
 
             return data
         ```
@@ -66,7 +66,7 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
             
                 ...
 
-               자세한 코드는 all_code.ipynb 참조
+               자세한 코드는 test.ipynb 참조
                
                 return data
         ```
@@ -89,7 +89,7 @@ def Win():
     
     ...    
     
-    자세한 코드는 all_code.ipynb 참조
+    자세한 코드는 test.ipynb 참조
 
     return pd.DataFrame(jsonlload('/content/drive/MyDrive/Inference_samples.jsonl'))
 ```
