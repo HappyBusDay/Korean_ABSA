@@ -94,6 +94,14 @@ df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
                     sentence['annotation'].append([pair, pc_result])                
 
             return data
+        ```    
+        ```c
+
+        def predict_from_korean_form_kelec_forcing(tokenizer_kelec, ce_model, pc_model, data):
+
+            자세한 코드는 all_code.ipynb 참조
+
+            return data
         ```
             
  
