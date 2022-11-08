@@ -1,8 +1,7 @@
 # 2022 국립국어원 인공 지능 언어 능력 평가
 <img width="500" alt="2022 국립국어원" src="https://user-images.githubusercontent.com/73925429/200458285-bb6659d2-eebc-48e1-a768-61906aea5d89.png">
 
-#### Reference
-baseline code : [github-teddysum](https://github.com/teddysum/korean_ABSA_baseline)
+### Reference [github-teddysum](https://github.com/teddysum/korean_ABSA_baseline)
 
 #### 국립국어원 데이터셋(모두의 말뭉치) 신청하기 : [2022 인공지능 언어 능력 평가 말뭉치: ABSA](https://corpus.korean.go.kr/main.do#)
 
