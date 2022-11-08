@@ -18,7 +18,7 @@
     1. Google Colab Pro
     
     2. AWS(Amazom Web Services) 
-     - AWS의 구체적인 개발환경은 requirements.txt 참고
+       구체적인 개발환경은 requirements.txt 참고
 
 ---
 
