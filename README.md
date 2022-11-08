@@ -15,10 +15,10 @@
 
 # 가. 개발 환경
 
-    1. Google Colab Pro
+   #### 1. Google Colab Pro
     
-    2. AWS(Amazom Web Services) 
-    AWS의 구체적인 개발환경은 requirements.txt 참고
+   #### 2. AWS(Amazom Web Services) 
+   AWS의 구체적인 개발환경은 requirements.txt 참고
 
 ---
 
@@ -32,25 +32,25 @@
 ---
 
 # 다. 데이터 증강 방식
-```
+
 #### 1. Augmentation - RI(Random Insertion): 감탄사와 의성어를 문장 내에 추가하는 방식
-    
+  ```  
    ex) 나는 자전거 타는 것을 좋아한다. -> 와! 나는 자전거 타는 것을 좋아한다.
-
+```
 #### 2. Back-Translation
-
+```
    원본) 나는 자전거 타는 것을 좋아한다. 
     
    한국어 -> 프랑스어) J'aime faire du vélo. 
     
    프랑스어 -> 한국어) 저는 자전거 타는 것을 좋아해요.
-    
+ ```   
    위의 예와 같이 특정 문장을 다른 언어로 번역한 후 다시 한국어로 번역하여 의미는 같지만 형태가 다른 문장을 생성하는 방식
     
 #### 3. 외부 API 활용
  
    크롤링한 데이터(출처: 네이버쇼핑, 올리브영)에 대해 NAVER CLOVA Sentiment API를 이용하여 Label을 'neutral'과 'negative'를 부여하는 방식
-```    
+    
 ---
 
 # 라. 주요 소스 코드
