@@ -35,12 +35,12 @@
 
 #### 1. Augmentation - RI(Random Insertion): 감탄사와 의성어를 문장 내에 추가하는 방식
 
-    ```  
+    ```c  
        ex) 나는 자전거 타는 것을 좋아한다. -> 와! 나는 자전거 타는 것을 좋아한다.
     ```
 #### 2. Back-Translation
 
-    ```
+    ```c
        원본) 나는 자전거 타는 것을 좋아한다. 
 
        한국어 -> 프랑스어) J'aime faire du vélo. 
