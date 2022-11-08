@@ -55,7 +55,7 @@
 
 # 라. 주요 소스 코드
 
-- 모델 로드: Hugging Face에서 Pre-Trained Model 불러오기 ( pip install transformers )
+- ## 모델 로드: Hugging Face에서 Pre-Trained Model 불러오기 ( pip install transformers )
 
     ### Category, Polarity 사용 모델
     - ELECTRA : [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
@@ -74,7 +74,7 @@ tokenizer = AutoTokenizer.from_pretrained(base_model)
 ```
 
 
-- 데이터 로드: jsonlload
+- ## 데이터 로드: jsonlload
 데이터가 line별로 저장된 json 파일( jsonl )이기 때문에 데이터 로드를 할 때 해당 코드로 구현함
 
 ```c
@@ -88,7 +88,7 @@ def jsonlload(fname, encoding="utf-8"):
     return json_list
 df = pd.DataFrame(jsonlload('/content/sample.jsonl'))
 ```
-- Pipeline: predict_from_korean_form
+- ## Pipeline: predict_from_korean_form
 코드 내에서 5종류의 Pipeline이 있지만 그 중 2종류
 
     - 방법 1: Force ( Force evaluation of a Argment )
