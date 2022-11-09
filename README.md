@@ -63,7 +63,7 @@
     ### Category, Polarity 사용 모델
     - ELECTRA : [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
     > (한국어) 블로그, 댓글, 리뷰 데이터로 학습된 ELECTRA Model
-    ### Polarity 사용 모델
+    ### Category 사용 모델
     - RoBERTa : [xlm-roberta-base](https://huggingface.co/xlm-roberta-base)
     > Multi-language로 학습된 RoBERTa Model ( 처음 reference 진행한 model )
     - DeBERTa : [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
