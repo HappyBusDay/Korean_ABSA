@@ -102,6 +102,8 @@
     - #### 방법 1: Force ( Force evaluation of a Argment )
     
      빈칸 " [ ] " 에 대해서 가장 높은 확률의 카테고리를 강제로 뽑아내는 방법 
+     
+     [Force에 대한 설명](https://rdrr.io/r/base/force.html)
     
      ```c
 
