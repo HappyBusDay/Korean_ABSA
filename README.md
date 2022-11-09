@@ -101,21 +101,21 @@
 
     - #### 방법 1: Force ( Force evaluation of a Argment )
     
-     빈칸 " [ ] " 에 대해서 가장 높은 확률의 카테고리를 강제로 뽑아내는 방법 
-     
-     [Force에 대한 설명](https://rdrr.io/r/base/force.html)
-    
-     ```c
+         빈칸 " [ ] " 에 대해서 가장 높은 확률의 카테고리를 강제로 뽑아내는 방법 
 
-    def predict_from_korean_form_kelec_forcing(tokenizer_kelec, ce_model, pc_model, data):
+         [Force에 대한 설명](https://rdrr.io/r/base/force.html)
 
-        ...
+         ```c
 
-        자세한 코드는 code/test.ipynb 참조
+        def predict_from_korean_form_kelec_forcing(tokenizer_kelec, ce_model, pc_model, data):
 
-        return data
-     ```
-            
+            ...
+
+            자세한 코드는 code/test.ipynb 참조
+
+            return data
+         ```
+
  
     - #### 방법 2: DeBERTa(RoBERTa)와 ELECTRA Pipeline
     
