@@ -1,8 +1,6 @@
 # 2022 국립국어원 인공 지능 언어 능력 평가
 <img width="500" alt="2022 국립국어원" src="https://user-images.githubusercontent.com/73925429/200458285-bb6659d2-eebc-48e1-a768-61906aea5d89.png">
 
-### Reference: [github-teddysum](https://github.com/teddysum/korean_ABSA_baseline)
-
 #### 국립국어원 데이터셋(모두의 말뭉치) 신청하기 : [2022 인공지능 언어 능력 평가 말뭉치: ABSA](https://corpus.korean.go.kr/main.do#)
 
 ~~F1 score 평가 방식 변경으로 대회 기간이 2022년 11월 09일로 연장.~~
@@ -188,3 +186,9 @@
     ( Hard Voting )
     
     > [그림 출처: Ensemble Learning : Voting and Bagging](https://velog.io/@jiselectric/Ensemble-Learning-Voting-and-Bagging-at6219ae)
+   
+   
+---
+
+# 마. Reference
+[github : teddysum/korean_ABSA_baseline](https://github.com/teddysum/korean_ABSA_baseline)
