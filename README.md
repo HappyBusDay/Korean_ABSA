@@ -7,7 +7,7 @@
 
 ~~F1 score 평가 방식 변경으로 대회 기간이 2022년 11월 09일로 연장.~~
 
-### 최종 순위 
+### 최종 순위 예
 
 <img width="900" alt="순위 예시" src="https://user-images.githubusercontent.com/73925429/200461303-85d6bcf5-3d91-4145-a4f1-fd81173c81cd.png">
 
