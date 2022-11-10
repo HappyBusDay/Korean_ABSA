@@ -58,14 +58,6 @@
 
 - ## Model Load: Hugging Face에서 Pre-Trained Model 불러오기 ( pip install transformers )
 
-    ### Category, Polarity 사용 모델
-    - ELECTRA : [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
-    > (한국어) 블로그, 댓글, 리뷰 데이터로 학습된 ELECTRA Model
-    ### Category 사용 모델
-    - RoBERTa : [xlm-roberta-base](https://huggingface.co/xlm-roberta-base)
-    > Multi-language로 학습된 RoBERTa Model ( 처음 reference 진행한 model )
-    - DeBERTa : [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
-    > (한국어) 모두의 말뭉치, 국민청원 등의 데이터로 학습된 DeBERTa Model
     
     목록 | Model | 학습된 데이터 | 링크
     -----| ------| -------------| ----------|
