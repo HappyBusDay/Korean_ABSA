@@ -66,6 +66,15 @@
     > Multi-language로 학습된 RoBERTa Model ( 처음 reference 진행한 model )
     - DeBERTa : [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
     > (한국어) 모두의 말뭉치, 국민청원 등의 데이터로 학습된 DeBERTa Model
+    
+    목록 | Model | 학습된 데이터 | 링크
+    -----| ------| -------------| ----------|
+    Category | ELECTRA | 한국어로 된 블로그, 댓글, 리뷰 데이터 | [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
+             | RoBERTa | Wikipidia, BookCorpus, CommonCrawl data 등 100 languagues로 된 데이터 | [xlm-roberta-base](https://huggingface.co/xlm-roberta-base)
+             | DeBERTa | 한국어로 된 모두의 말뭉치, 국민청원 등의 데이터 | [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
+    Polarity | ELECTRA | 한국어로 된 블로그, 댓글, 리뷰 데이터 | [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
+    
+    
     ```c
     from transformers import AutoTokenizer, AutoModel
     base_model = "HuggingFace주소"
