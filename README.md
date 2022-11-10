@@ -69,6 +69,7 @@
     
     
     ```c
+    # HuggingFace에서 불러오기
     from transformers import AutoTokenizer, AutoModel
     base_model = "HuggingFace주소"
 
