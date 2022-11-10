@@ -14,6 +14,7 @@
 # 코드 정리
 
 파일명 | 설명
+-------| -----|
 [train.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/train.ipynb) | 1
 [test.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/test.ipynb) | 2
 [Data_Augmentation](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb) | 3
