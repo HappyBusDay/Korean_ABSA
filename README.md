@@ -11,6 +11,20 @@
 
 ---
 
+# 코드 정리
+
+파일명 | 설명
+[train.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/train.ipynb) | 1
+[test.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/test.ipynb) | 2
+[Data_Augmentation](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb) | 3
+[Back_Translation.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Back_Translation.ipynb) | 4
+[MakeData_with_API.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/MakeData_with_API.ipynb) | 5
+[Ensemble.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Ensemble.ipynb) | 6
+[Auto_Ensemble.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb) |7
+
+
+---
+
 # 가. 개발 환경
 
     1. Google Colab Pro
@@ -59,7 +73,7 @@
 - ## Model Load: Hugging Face에서 Pre-Trained Model 불러오기 ( pip install transformers )
 
     
-    목록 | Model | 학습된 데이터 | 링크
+    목록 | Model | 학습된 데이터 | 링크(HuggingFace)
     -----| ------| -------------| ----------|
     Category  | RoBERTa | Wikipidia, BookCorpus, CommonCrawl data 등 100 languagues로 된 데이터 | [xlm-roberta-base](https://huggingface.co/xlm-roberta-base)
     Category | DeBERTa | 한국어로 된 모두의 말뭉치, 국민청원 등의 데이터 | [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
