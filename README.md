@@ -164,7 +164,6 @@
    ```
 
 
-
 - ## Data Load: jsonlload
     데이터가 line별로 저장된 json 파일( jsonl )이기 때문에 데이터 로드를 할 때 해당 코드로 구현함
 
