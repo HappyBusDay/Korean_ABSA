@@ -33,13 +33,17 @@
     </thead>
     <tbody>
         <tr>
-            <td rowspan=4>L1 Name</td>
-            <td rowspan=2>L2 Name A</td>
-            <td>L3 Name A</td>
+            <td rowspan=3>Data 만들기</td>
+            <td>[Data_Augmentation](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb)</td>
+            <td> Random_Insertion, Random_Swap, Random_Deletion Code</td>
         </tr>
         <tr>
-            <td>L3 Name B</td>
+            <td>[Back_Translation.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Back_Translation.ipynb)</td>
+            <td> Back_Translation Code</td>
         </tr>
+        <tr>
+            <td>[MakeData_with_API.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/MakeData_with_API.ipynb)</td>
+            <td> Naver API를 이용하여 데이터의 라벨을 달아주는 Code </td>
         <tr>
             <td rowspan=2>L2 Name B</td>
             <td>L3 Name C</td>
