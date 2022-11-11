@@ -68,10 +68,8 @@
 
 # 가. 개발 환경
 
-    1. Google Colab Pro
-    
-    2. AWS(Amazom Web Services) 
-       구체적인 개발환경은 requirements.txt 참고
+     Google Colab Pro
+     
 
 ---
 
@@ -298,4 +296,4 @@
 
 [6] [teddysum/korean_ABSA_baseline](https://github.com/teddysum/korean_ABSA_baseline): GitHub
 
-
+[7] [catSirup/KorEDA](https://github.com/catSirup/KorEDA)
