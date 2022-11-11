@@ -111,7 +111,7 @@
 
 
 - ## Inference: predict_from_korean_form
-   predict_from_korean_form 6가지 중 일부
+   predict_from_korean_form 6가지의 방법 중 일부
    
    > [tysl4545/Korean_ABSA/code/test.ipynb 참조](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/test.ipynb)
 
