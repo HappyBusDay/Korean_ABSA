@@ -110,8 +110,8 @@
     ```
 
 
-- ## Pipeline: predict_from_korean_form
-   코드 내에서 6종류의 Pipeline이 있지만 그 중 3종류
+- ## Inference: predict_from_korean_form
+   predict_from_korean_form 6가지 중 일부
    
    > [tysl4545/Korean_ABSA/code/test.ipynb 참조](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/test.ipynb)
 
@@ -133,9 +133,9 @@
          ```
 
  
-    - #### 방법 2: DeBERTa(RoBERTa)와 ELECTRA Pipeline
+    - #### 방법 2: DeBERTa(RoBERTa)와 ELECTRA 
     
-         기존의 한 모델에 대한 tokenizer만으로 pipeline을 구축하는 것이 아닌 여러 모델을 로드한 후 각 모델 별 tokenizer를 이용해 pipeline을 구축하는 방법 
+         기존의 한 모델에 대한 tokenizer만으로 inference를 진행하는 것이 아닌 여러 모델을 로드한 후 각 모델 별 tokenizer를 이용해 inference를 진행하는 방법 
 
          ```c
 
@@ -168,44 +168,46 @@
 
 
 
-- ## Inference: 여러 모델을 거쳐 Inference를 진행
-    해당 코드는 12종류[category{6종류} + polarity{6종류}]의 모델을 불러옴 
+- ## Pipeline 및 Ensemble
+    - #### Pipeline: 여러 모델을 불러 결과값 도출
+        
+        해당 코드는 12종류[category{6종류} + polarity{6종류}]의 모델을 불러옴 
 
-    " [ ] " 을 최소화 하기 위해 DeBERTa와 ELECTRA 등 여러 모델의 Weight파일을 불러 진행
+        " [ ] " 을 최소화 하기 위해 DeBERTa와 ELECTRA 등 여러 모델의 Weight파일을 불러 진행
 
-    ```c
-    def Win():
+        ```c
+        def Win():
 
-        print("Deberta!!")
+            print("Deberta!!")
 
-        tokenizer_kelec = AutoTokenizer.from_pretrained(base_model_elec)
-        tokenizer_deberta = AutoTokenizer.from_pretrained(base_model_deberta)
-        tokenizer_roberta = AutoTokenizer.from_pretrained(base_model_roberta)
+            tokenizer_kelec = AutoTokenizer.from_pretrained(base_model_elec)
+            tokenizer_deberta = AutoTokenizer.from_pretrained(base_model_deberta)
+            tokenizer_roberta = AutoTokenizer.from_pretrained(base_model_roberta)
 
-        num_added_toks_kelec = tokenizer_kelec.add_special_tokens(special_tokens_dict)
-        num_added_toks_deberta = tokenizer_deberta.add_special_tokens(special_tokens_dict)
-        num_added_toks_roberta = tokenizer_roberta.add_special_tokens(special_tokens_dict)
+            num_added_toks_kelec = tokenizer_kelec.add_special_tokens(special_tokens_dict)
+            num_added_toks_deberta = tokenizer_deberta.add_special_tokens(special_tokens_dict)
+            num_added_toks_roberta = tokenizer_roberta.add_special_tokens(special_tokens_dict)
 
-        ...    
+            ...    
 
-        자세한 코드는 code/test.ipynb 참조
+            자세한 코드는 code/test.ipynb 참조
 
-        return pd.DataFrame(jsonlload('/content/drive/MyDrive/Inference_samples.jsonl'))
-    ```
+            return pd.DataFrame(jsonlload('/content/drive/MyDrive/Inference_samples.jsonl'))
+        ```
     
     
-- ## Ensemble: 위의 Inference의 결과로 만들어진 jsonl파일을 불러와 Hard Voting을 진행
-    > [Ensemble.ipynb 참조](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Ensemble.ipynb)
+    - #### Ensemble: 위의 Inference의 결과로 만들어진 jsonl파일을 불러와 Hard Voting을 진행
+        > [Ensemble.ipynb 참조](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Ensemble.ipynb)
 
-    > [Auto_Ensemble.ipynb 참조](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb)
+        > [Auto_Ensemble.ipynb 참조](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb)
 
-    <img width="504" alt="hard voting" src="https://user-images.githubusercontent.com/73925429/200563368-a9845d1c-7065-4913-817f-1be4dbbd30d7.png">
-    
-    ( Hard Voting )
-    
-    > [그림 출처: Ensemble Learning : Voting and Bagging](https://velog.io/@jiselectric/Ensemble-Learning-Voting-and-Bagging-at6219ae)
-   
-   
+        <img width="504" alt="hard voting" src="https://user-images.githubusercontent.com/73925429/200563368-a9845d1c-7065-4913-817f-1be4dbbd30d7.png">
+
+        ( Hard Voting )
+
+        > [그림 출처: Ensemble Learning : Voting and Bagging](https://velog.io/@jiselectric/Ensemble-Learning-Voting-and-Bagging-at6219ae)
+
+
 ---
 
 # 마. Reference
