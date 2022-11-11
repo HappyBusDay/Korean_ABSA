@@ -204,8 +204,8 @@
 
  
     - #### 방법 2: DeBERTa(RoBERTa)와 ELECTRA 
-    
-         기존의 한 모델에 대한 tokenizer만으로 inference를 진행하는 것이 아닌 여러 모델을 로드한 후 각 모델 별 tokenizer를 이용해 inference를 진행하는 방법 
+        
+         모델 별 tokenizer를 이용한 inference 진행하는 방법
 
          ```c
 
