@@ -118,7 +118,7 @@
         <tr>
             <th>목록</th>
             <th>Model</th>
-            <th>학습된 Data</th>
+            <th>Pre-Trained Data</th>
             <th>링크(HuggingFace)</td>
         </tr>
     </thead>
