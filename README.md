@@ -13,16 +13,6 @@
 
 # 코드 정리
 
-목록 | 파일명 | 설명
----- |-------| -----|
-*Data만들기* | [Data_Augmentation](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb) | Data를 증강시키는 코드 ( Random_Insertion, Random_Swap, Random_Deletion )
-*Data만들기* | [Back_Translation.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Back_Translation.ipynb) | Data를 증강시키는 코드 ( Back_Translation )
-*Data만들기* | [MakeData_with_API.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/MakeData_with_API.ipynb) | Naver Open API를 이용하여 데이터의 라벨을 달아주는 코드
-*Model training* | [train.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/train.ipynb) | Model과 Data를 불러와 학습시키는 코드
-*Prediction* | [test.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/test.ipynb) | 학습 시켰던 Model의 Weights를 불러와서 새로운 데이터의 결과값을 예측하는 코드
-*Model Ensemble* | [Ensemble.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Ensemble.ipynb) | Prediction의 결과(jsonl파일)를 불러와서 Hard Voting하는 코드
-*Model Ensemble* | [Auto_Ensemble.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb) | Model Ensemble을 자동으로 조합을 짜??
-
 <table>
     <thead>
         <tr>
@@ -130,7 +120,44 @@
     Category  Polarity | ELECTRA | 한국어로 된 블로그, 댓글, 리뷰 데이터 | [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
     
     > 속성 범주(Category)와 감성 범주(Polarity의 class 불균형을 해소하기 위해서 각 범주를 분리하여 전처리 및 학습을 진행하였다. 
-    
+    <table>
+    <thead>
+        <tr>
+            <th>목록</th>
+            <th>Model</th>
+            <th>학습된 Data</th>
+            <th>링크(HuggingFace)</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=3>속성범주(Category)</td>
+            <td> ELECTRA</td>
+            <td> 한국어로 된 블로그, 댓글, 리뷰 Data </td>
+            <td>
+                <a href="https://huggingface.co/kykim/electra-kor-base">kykim/electra-kor-base</a>
+        </tr>
+        <tr>
+            <td> RoBERTa</td>
+            <td> Wikipidia, BookCorpus, CommonCrawl data 등 100 languagues로 된 Data </td>
+            <td>
+                <a href="https://huggingface.co/xlm-roberta-base">xlm-roberta-base</a>
+        </tr>
+        <tr>
+            <td>DeBERTa</td>
+            <td>한국어로 된 모두의 말뭉치, 국민청원 등의 Data </td>
+            <td>
+                <a href="https://huggingface.co/lighthouse/mdeberta-v3-base-kor-further">mdeberta-v3-base-kor-further</a>
+        </tr>
+        <tr>
+            <td>속성범주(Polarity)</td>
+            <td> ELECTRA</td>
+            <td> 한국어로 된 블로그, 댓글, 리뷰 Data </td>
+            <td>
+                <a href="https://huggingface.co/kykim/electra-kor-base">kykim/electra-kor-base</a>
+        </tr>
+    </tbody>
+</table>
     
     ```c
     # HuggingFace에서 불러오기
