@@ -15,13 +15,13 @@
 
 목록 | 파일명 | 설명
 ---- |-------| -----|
-Data만들기 | [Data_Augmentation](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb) | Data를 증강시키는 코드 ( Random_Insertion, Random_Swap, Random_Deletion )
-Data만들기 | [Back_Translation.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Back_Translation.ipynb) | Data를 증강시키는 코드 ( Back_Translation )
-Data만들기 | [MakeData_with_API.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/MakeData_with_API.ipynb) | Naver API를 이용하여 데이터의 라벨을 달아주는 코드
-*Model training* | [train.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/train.ipynb) | Model과 Data를 불러와 학습시키는 코드
-*Prediction* | [test.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/test.ipynb) | 학습 시켰던 Model의 Weights를 불러와서 새로운 데이터의 결과값 예측하는 코드
-Model Ensemble | [Ensemble.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Ensemble.ipynb) | 6
-Model Ensemble | [Auto_Ensemble.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb) |7
+*Data만들기 | [Data_Augmentation](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb) | Data를 증강시키는 코드 ( Random_Insertion, Random_Swap, Random_Deletion )
+*Data만들기 | [Back_Translation.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Back_Translation.ipynb) | Data를 증강시키는 코드 ( Back_Translation )
+*Data만들기 | [MakeData_with_API.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/MakeData_with_API.ipynb) | Naver API를 이용하여 데이터의 라벨을 달아주는 코드
+*Model training | [train.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/train.ipynb) | Model과 Data를 불러와 학습시키는 코드
+*Prediction | [test.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/test.ipynb) | 학습 시켰던 Model의 Weights를 불러와서 새로운 데이터의 결과값 예측하는 코드
+*Model Ensemble | [Ensemble.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Ensemble.ipynb) | 6
+*Model Ensemble | [Auto_Ensemble.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb) |7
 
 
 ---
