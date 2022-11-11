@@ -150,9 +150,9 @@
                 <a href="https://huggingface.co/kykim/electra-kor-base">kykim/electra-kor-base</a>
         </tr>
     </tbody>
-</table>
+    </table>
     
-   >속성 범주(Category)와 감성 범주(Polarity의 class 불균형을 해소하기 위해서 각 범주를 분리하여 전처리 및 학습을 진행하였다.     
+   > 속성 범주(Category)와 감성 범주(Polarity의 class 불균형을 해소하기 위해서 각 범주를 분리하여 전처리 및 학습을 진행하였다.     
     
    ```c
     # HuggingFace에서 불러오기
