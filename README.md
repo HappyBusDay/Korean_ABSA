@@ -284,7 +284,6 @@
 ---
 
 # 마. Reference
-[github : teddysum/korean_ABSA_baseline]
 
 [1] [EDA: Easy Data Augmentation](https://arxiv.org/pdf/1901.11196.pdf): Wei, Jason, and Kai Zou. "Eda: Easy data augmentation techniques for boosting performance on text classification tasks." arXiv preprint arXiv:1901.11196 (2019).
 
