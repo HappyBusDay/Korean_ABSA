@@ -285,10 +285,16 @@
 
 # 마. Reference
 [github : teddysum/korean_ABSA_baseline](https://github.com/teddysum/korean_ABSA_baseline)
+
 [Wei, Jason, and Kai Zou. "Eda: Easy data augmentation techniques for boosting performance on text classification tasks." arXiv preprint arXiv:1901.11196 (2019).](https://arxiv.org/pdf/1901.11196.pdf)
+
 [Xie, Qizhe, et al. "Unsupervised data augmentation for consistency training." Advances in Neural Information Processing Systems 33 (2020): 6256-6268.](https://proceedings.neurips.cc/paper/2020/file/44feb0096faa8326192570788b38c1d1-Paper.pdf)
+
 [Clark, Kevin, et al. "Electra: Pre-training text encoders as discriminators rather than generators." arXiv preprint arXiv:2003.10555 (2020).](https://arxiv.org/pdf/2003.10555.pdf)
+
 [Liu, Yinhan, et al. "Roberta: A robustly optimized bert pretraining approach." arXiv preprint arXiv:1907.11692 (2019).](https://arxiv.org/pdf/1907.11692.pdf)
+
 [He, Pengcheng, et al. "Deberta: Decoding-enhanced bert with disentangled attention." arXiv preprint arXiv:2006.03654 (2020).](https://arxiv.org/pdf/2006.03654.pdf)
+
 
 
