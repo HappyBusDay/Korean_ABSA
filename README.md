@@ -35,7 +35,7 @@
         <tr>
             <td rowspan=3>Data 만들기</td>
             <td>[Data_Augmentation]
-                <a href=https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb></a>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb"></a>
             </td>
             <td> Random_Insertion, Random_Swap, Random_Deletion Code</td>
         </tr>
