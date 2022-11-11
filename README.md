@@ -35,20 +35,23 @@
         <tr>
             <td rowspan=3>Data 만들기</td>
             <td>
-                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb">[Data_Augmentation.ipynb]</a>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb">Data_Augmentation.ipynb</a>
             </td>
             <td> Random_Insertion, Random_Swap, Random_Deletion Code</td>
         </tr>
         <tr>
-            <td>[Back_Translation.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Back_Translation.ipynb)</td>
+            <td>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Back_Translation.ipynb">Back_Translation.ipynb</a>                
             <td> Back_Translation Code</td>
         </tr>
         <tr>
-            <td>[MakeData_with_API.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/MakeData_with_API.ipynb)</td>
+            <td>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/MakeData_with_API.ipynb">MakeData_with_API.ipynb</a>     
             <td> Naver Open API를 이용하여 데이터의 라벨을 달아주는 Code </td>
         <tr>
             <td>Model Training</td>
-            <td>[train.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/train.ipynb)</td>
+            <td>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/train.ipynb">train.ipynb</a>     
             <td> Model과 Data를 불러와 학습시키는 Code </td>
         </tr>
         <tr>
