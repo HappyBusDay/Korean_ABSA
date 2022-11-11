@@ -239,6 +239,9 @@
 
 
 - ## Pipeline 및 Ensemble
+
+   > [HappyBusDay/Korean_ABSA/code/test.ipynb 참조](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/test.ipynb)
+   
     - #### Pipeline: 여러 모델을 불러 결과값 도출
         
         해당 코드는 12종류[category{6종류} + polarity{6종류}]의 모델을 불러옴 
