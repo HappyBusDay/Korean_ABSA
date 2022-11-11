@@ -143,7 +143,7 @@
                 <a href="https://huggingface.co/lighthouse/mdeberta-v3-base-kor-further">mdeberta-v3-base-kor-further</a>
         </tr>
         <tr>
-            <td>속성범주 (Polarity)</td>
+            <td>감성범주 (Polarity)</td>
             <td> ELECTRA</td>
             <td> 한국어로 된 블로그, 댓글, 리뷰 Data </td>
             <td>
