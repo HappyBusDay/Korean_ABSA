@@ -111,15 +111,8 @@
 # 라. 주요 소스 코드
 
 - ## Model Load: Hugging Face에서 Pre-Trained Model 불러오기 ( pip install transformers )
-
-    
-    목록 | Model | 학습된 데이터 | 링크(HuggingFace)
-    -----| ------| -------------| ----------|
-    Category  | RoBERTa | Wikipidia, BookCorpus, CommonCrawl data 등 100 languagues로 된 데이터 | [xlm-roberta-base](https://huggingface.co/xlm-roberta-base)
-    Category | DeBERTa | 한국어로 된 모두의 말뭉치, 국민청원 등의 데이터 | [mdeberta-v3-base-kor-further](lighthouse/mdeberta-v3-base-kor-further)
-    Category  Polarity | ELECTRA | 한국어로 된 블로그, 댓글, 리뷰 데이터 | [kykim/electra-kor-base](https://huggingface.co/kykim/electra-kor-base)
-    
-    > 속성 범주(Category)와 감성 범주(Polarity의 class 불균형을 해소하기 위해서 각 범주를 분리하여 전처리 및 학습을 진행하였다. 
+   
+   
     <table>
     <thead>
         <tr>
@@ -158,6 +151,8 @@
         </tr>
     </tbody>
 </table>
+    
+    > 속성 범주(Category)와 감성 범주(Polarity의 class 불균형을 해소하기 위해서 각 범주를 분리하여 전처리 및 학습을 진행하였다.     
     
     ```c
     # HuggingFace에서 불러오기
