@@ -299,5 +299,3 @@
 [6] [teddysum/korean_ABSA_baseline](https://github.com/teddysum/korean_ABSA_baseline): GitHub
 
 
-  
-123123123
