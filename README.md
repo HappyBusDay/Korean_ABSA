@@ -59,7 +59,7 @@
         <tr>
             <td>
                 <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb">Auto_Ensemble.ipynb</a>
-            <td>오토오토오토오토오토오토오토오토옽오토오톨오토오토오토오토오토오토오토오토오토오토오토오토오토오토오토오토오토오토오토오토오토오토오토오토</td>
+            <td>다양한 조합의 결과를 도출하는 Ensemble code</td>
         </tr>
     </tbody>
 </table>
