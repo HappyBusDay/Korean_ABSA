@@ -17,7 +17,7 @@
 ---- |-------| -----|
 *Data만들기* | [Data_Augmentation](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb) | Data를 증강시키는 코드 ( Random_Insertion, Random_Swap, Random_Deletion )
 *Data만들기* | [Back_Translation.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Back_Translation.ipynb) | Data를 증강시키는 코드 ( Back_Translation )
-*Data만들기* | [MakeData_with_API.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/MakeData_with_API.ipynb) | Naver API를 이용하여 데이터의 라벨을 달아주는 코드
+*Data만들기* | [MakeData_with_API.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/MakeData_with_API.ipynb) | Naver Open API를 이용하여 데이터의 라벨을 달아주는 코드
 *Model training* | [train.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/train.ipynb) | Model과 Data를 불러와 학습시키는 코드
 *Prediction* | [test.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/test.ipynb) | 학습 시켰던 Model의 Weights를 불러와서 새로운 데이터의 결과값을 예측하는 코드
 *Model Ensemble* | [Ensemble.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Ensemble.ipynb) | Prediction의 결과(jsonl파일)를 불러와서 Hard Voting하는 코드
@@ -34,7 +34,9 @@
     <tbody>
         <tr>
             <td rowspan=3>Data 만들기</td>
-            <td>[Data_Augmentation](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb)</td>
+            <td>[Data_Augmentation]
+                <a href=https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Data_Augmentation.ipynb></a>
+            </td>
             <td> Random_Insertion, Random_Swap, Random_Deletion Code</td>
         </tr>
         <tr>
@@ -43,12 +45,14 @@
         </tr>
         <tr>
             <td>[MakeData_with_API.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/MakeData_with_API.ipynb)</td>
-            <td> Naver API를 이용하여 데이터의 라벨을 달아주는 Code </td>
+            <td> Naver Open API를 이용하여 데이터의 라벨을 달아주는 Code </td>
         <tr>
-            <td rowspan=2>L2 Name B</td>
-            <td>L3 Name C</td>
+            <td>Model Training</td>
+            <td>[train.ipynb](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/train.ipynb)</td>
+            <td> Model과 Data를 불러와 학습시키는 Code </td>
         </tr>
         <tr>
+            <td rowspan=2
             <td>L3 Name D</td>
         </tr>
     </tbody>
