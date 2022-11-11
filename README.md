@@ -296,4 +296,4 @@
 
 [6] [teddysum/korean_ABSA_baseline](https://github.com/teddysum/korean_ABSA_baseline): GitHub
 
-[7] [catSirup/KorEDA](https://github.com/catSirup/KorEDA)
+[7] [catSirup/KorEDA](https://github.com/catSirup/KorEDA): GitHub
