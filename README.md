@@ -296,7 +296,7 @@
 
 [5] [DeBERTa](https://arxiv.org/pdf/2006.03654.pdf): He, Pengcheng, et al. "Deberta: Decoding-enhanced bert with disentangled attention." arXiv preprint arXiv:2006.03654 (2020).
 
-[6] [teddysum/korean_ABSA_baseline](https://github.com/teddysum/korean_ABSA_baseline): 
+[6] [teddysum/korean_ABSA_baseline](https://github.com/teddysum/korean_ABSA_baseline): GitHub
 
 
 
