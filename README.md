@@ -55,9 +55,22 @@
             <td> Model과 Data를 불러와 학습시키는 Code </td>
         </tr>
         <tr>
-            <td rowspan=2
-            <td>L3 Name D</td>
+            <td>Prediction</td>
+            <td>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/test.ipynb">test.ipynb</a>     
+            <td> 학습 시켰던 Model의 Weights를 불러와서 새로운 데이터의 결과값을 예측하는 Code </td>
+        </tr>        
+        <tr>
+            <td rowspan=2>Model Ensemble</td>       
+            <td>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Ensemble.ipynb">Ensemble.ipynb</a>
+            <td>Prediction의 결과(jsonl파일)를 불러와서 Hard Voting하는 Code</td>
         </tr>
+        <tr>  
+            <td>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb">Auto_Ensemble.ipynb</a>
+            <td>Model Ensemble을 자동으로 조합을 짜??</td>
+        </tr>        
     </tbody>
 </table>
 
