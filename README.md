@@ -64,7 +64,8 @@
             <td rowspan=2>Model Ensemble</td>       
             <td>
                 <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Ensemble.ipynb">Ensemble.ipynb</a>
-            <td>Prediction의 결과(jsonl파일)를 불러와서 Hard Voting하는 Code</td>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb">Auto_Ensemble.ipynb</a>
+            <td> rowspan=2Prediction의 결과(jsonl파일)를 불러와서 Hard Voting하는 Code</td>
         </tr>
         <tr>  
             <td>
