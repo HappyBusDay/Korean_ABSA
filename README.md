@@ -286,7 +286,7 @@
 # 마. Reference
 [github : teddysum/korean_ABSA_baseline](https://github.com/teddysum/korean_ABSA_baseline)
 
-[Wei, Jason, and Kai Zou. "Eda: Easy data augmentation techniques for boosting performance on text classification tasks." arXiv preprint arXiv:1901.11196 (2019).](https://arxiv.org/pdf/1901.11196.pdf)
+[1] [EDA: Easy Data Augmentation](https://arxiv.org/pdf/1901.11196.pdf): Wei, Jason, and Kai Zou. "Eda: Easy data augmentation techniques for boosting performance on text classification tasks." arXiv preprint arXiv:1901.11196 (2019).
 
 [Xie, Qizhe, et al. "Unsupervised data augmentation for consistency training." Advances in Neural Information Processing Systems 33 (2020): 6256-6268.](https://proceedings.neurips.cc/paper/2020/file/44feb0096faa8326192570788b38c1d1-Paper.pdf)
 
