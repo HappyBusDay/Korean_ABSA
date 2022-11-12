@@ -66,7 +66,7 @@
             <td>구현코드</td>
             <td>
                 <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb">Auto_Ensemble.ipynb</a>
-            <td>주최측에서 재현 검증을 위한 코드</td>
+            <td>최종 점수 재현 및 검증을 위한 코드</td>
         </tr>        
     </tbody>
 </table>
