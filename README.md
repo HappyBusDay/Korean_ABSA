@@ -5,7 +5,7 @@
 
 ~~F1 score 평가 방식 변경으로 대회 기간이 2022년 11월 09일로 연장.~~
 
-### 현재 순위 상위 10위권
+### 최종 순위: 4등
 <img width="332" alt="중간 순위" src="https://user-images.githubusercontent.com/73925429/201491608-527a205f-5395-4a00-a430-bc7b960ba74c.png">
 
 
