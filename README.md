@@ -5,9 +5,9 @@
 
 ~~F1 score 평가 방식 변경으로 대회 기간이 2022년 11월 09일로 연장.~~
 
-### 최종 순위 예
+### ~~현재 순위 상위 10위권~~
 
-<img width="900" alt="순위 예시" src="https://user-images.githubusercontent.com/73925429/200461303-85d6bcf5-3d91-4145-a4f1-fd81173c81cd.png">
+
 
 ---
 
@@ -70,6 +70,16 @@
 
      Google Colab Pro
      
+     huggingface-hub==0.10.1
+     datasets==2.6.1
+     tokenizers==0.13.2
+     torch==1.12.1+cu113
+     torchvision==0.13.1+cu113
+     transformers==4.24.0
+     tqdm==4.64.1
+     scikit-learn==1.0.2
+     sentencepiece==0.1.97
+
 
 ---
 
