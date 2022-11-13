@@ -314,3 +314,13 @@
 [6] [teddysum/korean_ABSA_baseline](https://github.com/teddysum/korean_ABSA_baseline): GitHub
 
 [7] [catSirup/KorEDA](https://github.com/catSirup/KorEDA): GitHub
+
+---
+
+# 바. Members
+Yongjae Kim | dydwo322@naver.com<br>
+Hyein Oh | gpdls741@naver.com<br>
+Seungyong Guk | kuksy77@naver.com<br>
+Jaehyeog Lee | tysl4545@naver.com<br>
+Hyoje Jung | flash1253@naver.com<br>
+Hyojin Kang | khj94111@gmail.com
