@@ -65,7 +65,7 @@
         <tr>
             <td>구현코드</td>
             <td>
-                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb">Auto_Ensemble.ipynb</a>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/test_and_ensemble_realizing.ipynb">test_and_ensemble_realizing.ipynb</a>
             <td>최종 점수 재현 및 검증을 위한 코드</td>
         </tr>        
     </tbody>
@@ -314,3 +314,13 @@
 [6] [teddysum/korean_ABSA_baseline](https://github.com/teddysum/korean_ABSA_baseline): GitHub
 
 [7] [catSirup/KorEDA](https://github.com/catSirup/KorEDA): GitHub
+
+---
+
+# 바. Members
+Yongjae Kim | dydwo322@naver.com<br>
+Hyein Oh | gpdls741@naver.com<br>
+Seungyong Guk | kuksy77@naver.com<br>
+Jaehyeog Lee | tysl4545@naver.com<br>
+Hyoje Jung | flash1253@naver.com<br>
+Hyojin Kang | khj94111@gmail.com
