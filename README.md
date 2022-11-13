@@ -5,7 +5,8 @@
 
 ~~F1 score 평가 방식 변경으로 대회 기간이 2022년 11월 09일로 연장.~~
 
-### ~~현재 순위 상위 10위권~~
+### 최종 순위: 4등
+<img width="332" alt="중간 순위" src="https://user-images.githubusercontent.com/73925429/201491608-527a205f-5395-4a00-a430-bc7b960ba74c.png">
 
 
 
@@ -61,6 +62,12 @@
                 <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb">Auto_Ensemble.ipynb</a>
             <td>다양한 조합의 결과를 도출하는 Ensemble code</td>
         </tr>
+        <tr>
+            <td>구현코드</td>
+            <td>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb">Auto_Ensemble.ipynb</a>
+            <td>최종 점수 재현 및 검증을 위한 코드</td>
+        </tr>        
     </tbody>
 </table>
 
