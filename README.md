@@ -201,7 +201,7 @@
    
    > [HappyBusDay/Korean_ABSA/code/test.ipynb 참조](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/test.ipynb)
 
-    - #### 방법 1: Force ( Force evaluation of a Argment )
+    - #### 방법 1: Force ( Force evaluation of a Argument )
     
          빈칸 " [ ] " 에 대해서 가장 높은 확률의 카테고리를 강제로 뽑아내는 방법 
 
