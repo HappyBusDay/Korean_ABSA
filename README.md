@@ -291,7 +291,7 @@
         > [Auto_Ensemble.ipynb 참조](https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb)
 
        
-        <img width="341" alt="KakaoTalk_20221113_222631386" src="https://user-images.githubusercontent.com/73925429/201582648-93ae75da-affe-4198-83a5-fb5280c54bdd.png">
+        <img width="450" alt="KakaoTalk_20221113_222631386" src="https://user-images.githubusercontent.com/73925429/201582648-93ae75da-affe-4198-83a5-fb5280c54bdd.png">
 
         ( Hard Voting )
 
