@@ -148,7 +148,7 @@
         </tr>
         <tr>
             <td> RoBERTa</td>
-            <td> Wikipdia, BookCorpus, CommonCrawl data 등 100 languagues로 된 Data </td>
+            <td> Wikipedia, BookCorpus, CommonCrawl data 등 100 languagues로 된 Data </td>
             <td>
                 <a href="https://huggingface.co/xlm-roberta-base">xlm-roberta-base</a>
         </tr>
