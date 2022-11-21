@@ -70,17 +70,17 @@
         </tr>
         <tr>
             <td>
-                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb">Auto_Ensemble.ipynb</a>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Organized_Inference.ipynb">Organized_Inference.ipynb</a>
             <td>최종 재현 코드1</td>
         </tr>
         <tr>
             <td>
-                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb">Auto_Ensemble.ipynb</a>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Organized_Realization.ipynb">Organized_Realization.ipynb</a>
             <td>최종 재현 코드2</td>
         </tr>
         <tr>
             <td>
-                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Auto_Ensemble.ipynb">Auto_Ensemble.ipynb</a>
+                <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Organized_Inference_and_Ensemble.ipynb">Organized_Inference_and_Ensemble.ipynb</a>
             <td>최종 재현 코드3</td>
         </tr>
         
