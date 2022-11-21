@@ -5,9 +5,9 @@
 
 ~~F1 score 평가 방식 변경으로 대회 기간이 2022년 11월 09일로 연장.~~
 
-### 최종 순위: 4등
-<img width="332" alt="중간 순위" src="https://user-images.githubusercontent.com/73925429/201491608-527a205f-5395-4a00-a430-bc7b960ba74c.png">
+### 최종 순위: 동상(4등)
 
+<img width="857" alt="image" src="https://user-images.githubusercontent.com/73925429/203103021-99bb6902-4658-4c47-ad83-f76595f22ad4.png">
 
 
 ---
