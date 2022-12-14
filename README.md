@@ -334,8 +334,6 @@
 
 ---
 
-![HBD](https://user-images.githubusercontent.com/73925429/207584705-fa5d3d47-9473-4bbf-92dd-5c15e0278408.png)
-
 # 바. Members
 
 Yongjae Kim | dydwo322@naver.com<br>
@@ -344,3 +342,5 @@ Seungyong Guk | kuksy77@naver.com<br>
 Jaehyeog Lee | tysl4545@naver.com<br>
 Hyoje Jung | flash1253@naver.com<br>
 Hyojin Kang | khj94111@gmail.com
+
+![HBD](https://user-images.githubusercontent.com/73925429/207584705-fa5d3d47-9473-4bbf-92dd-5c15e0278408.png)
