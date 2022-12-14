@@ -334,7 +334,10 @@
 
 ---
 
+![HBD](https://user-images.githubusercontent.com/73925429/207584705-fa5d3d47-9473-4bbf-92dd-5c15e0278408.png)
+
 # 바. Members
+
 Yongjae Kim | dydwo322@naver.com<br>
 Hyein Oh | gpdls741@naver.com<br>
 Seungyong Guk | kuksy77@naver.com<br>
