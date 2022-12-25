@@ -82,8 +82,7 @@
             <td>
                 <a href="https://github.com/HappyBusDay/Korean_ABSA/blob/main/code/Organized_Inference_and_Ensemble.ipynb">Organized_Inference_and_Ensemble.ipynb</a>
             <td>최종 재현 코드3</td>
-        </tr>
-        
+        </tr>      
     </tbody>
 </table>
 
